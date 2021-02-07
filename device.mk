@@ -387,7 +387,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+#    init.enforcing.rc \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
