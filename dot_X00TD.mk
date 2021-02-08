@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -28,13 +28,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
-#CHERISH_WITHGAPPS := true
+
 
 # Google Recorder
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-# Official
-CHERISH_BUILD_TYPE:= OFFICIAL
 
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -42,7 +40,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := cherish_X00TD
+PRODUCT_NAME := dot_X00TD
 PRODUCT_MODEL := ZenFone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
@@ -66,9 +64,6 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.vendor.product.name \
     ro.vendor.product.model
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cherish.maintainer=Ken_kaneki_69
 
 #faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
