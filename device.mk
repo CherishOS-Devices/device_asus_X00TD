@@ -382,13 +382,12 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.safailnet.rc \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \
-#    init.enforcing.rc \
+    init.enforcing.rc 
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
