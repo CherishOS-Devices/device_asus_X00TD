@@ -82,6 +82,7 @@ PRODUCT_COPY_FILES += \
    device/asus/X00TD/configs/android.hardware.camera.ar.xml:vendor/etc/permissions/android.hardware.camera.ar.xml
 
 # APEX
+ENABLE_APEX := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
 
