@@ -30,11 +30,12 @@ TARGET_GAPPS_ARCH := arm64
 #TARGET_INCLUDE_WIFI_EXT := true
 #CHERISH_WITHGAPPS := true
 
+
 # Google Recorder
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Official
-CHERISH_BUILD_TYPE:= Official
+CHERISH_BUILD_TYPE:= OFFICIAL
 
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -72,3 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+#dependencies
+ALLOW_MISSING_DEPENDENCIES=true
