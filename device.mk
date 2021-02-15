@@ -385,6 +385,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
+    init.spectrum.rc \
+    init.spectrum.sh \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \

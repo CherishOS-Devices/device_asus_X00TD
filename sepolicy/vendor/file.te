@@ -1,4 +1,3 @@
-type public_adsprpcd_file, file_type;
 type keylayout_file, file_type, vendor_file_type;
 type cdfinger_data_file, file_type, data_file_type, core_data_file_type;
 type debugfs_power_stats, fs_type, debugfs_type;
@@ -22,3 +21,8 @@ type sysfs_backlight, sysfs_type, fs_type;
 type sysfs_hgain, sysfs_type, fs_type;
 type sysfs_mgain, sysfs_type, fs_type;
 type sysfs_tbrightness, sysfs_type, fs_type;
+
+# MSM thermal
+type sysfs_msmthermal, sysfs_type, fs_type;
+type sysfs_corecontrol, sysfs_type, fs_type;
+type sysfs_vddrestrict, sysfs_type, fs_type;
