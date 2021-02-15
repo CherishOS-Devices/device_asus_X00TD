@@ -71,6 +71,8 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cherish.maintainer=Ken_kaneki_69
 
+
+
 #faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
